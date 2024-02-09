@@ -1,5 +1,11 @@
+import Webrouting from "./routing";
+
 function App() {
-  return <>Bismillah</>;
+  return (
+    <>
+      <Webrouting />
+    </>
+  );
 }
 
 export default App;
