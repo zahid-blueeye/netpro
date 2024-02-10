@@ -1,7 +1,11 @@
-import React from "react";
+import { Button } from "@mui/base";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Button variant="contained">Click me</Button>
+    </div>
+  );
 };
 
 export default Home;
