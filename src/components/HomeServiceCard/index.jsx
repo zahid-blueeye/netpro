@@ -1,20 +1,36 @@
 import Icon from "@mui/icons-material/HandymanRounded";
 import { Card, CardContent, IconButton, Typography } from "@mui/material";
 
-const HomeServiceCard = () => {
+const HomeServiceCard = ({ body, title }) => {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <IconButton>
-          <Icon />
+    <Card
+      sx={{
+        borderRadius: "16px",
+        borderBottom: `10px solid transparent`,
+        minWidth: 275,
+        height: 250,
+
+        "&:hover": {
+          borderBottomColor: `primary.main`,
+        },
+      }}
+    >
+      <CardContent
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          height: "100%",
+        }}
+      >
+        <IconButton sx={{ bgcolor: "secondary.light" }}>
+          <Icon color="primary" />
         </IconButton>
         <Typography my={2} variant="h6" fontWeight={700}>
-          Avadanlıqların quraşdırılması və konfiqurasiyası
+          {title}
         </Typography>
-        <Typography variant="body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna diam
-          ullamcorper aliquet non, ut id sit eros integer.
-        </Typography>
+        <Typography variant="body">{body}</Typography>
       </CardContent>
     </Card>
   );

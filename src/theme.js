@@ -7,6 +7,7 @@ const theme = createTheme({
     },
     secondary: {
       main: "#606F84",
+      light: "rgba(67,80,114,0.1)",
     },
   },
 });
