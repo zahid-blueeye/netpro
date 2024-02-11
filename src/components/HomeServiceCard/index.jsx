@@ -27,7 +27,7 @@ const HomeServiceCard = ({ body, title }) => {
         <IconButton sx={{ bgcolor: "secondary.light" }}>
           <Icon color="primary" />
         </IconButton>
-        <Typography my={2} variant="h6" fontWeight={700}>
+        <Typography variant="h6" fontWeight={700}>
           {title}
         </Typography>
         <Typography variant="body">{body}</Typography>
